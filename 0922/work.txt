@@ -1,0 +1,31 @@
+для НОВОЙ ветки:
+git checkout -b <имя ветки>
+для существующей или новой, которая есть на удаленном репо:
+git checkout <имя ветки>
+
+git push -u origin testbranch
+аналогично
+git push --set-upstream origin testbranch
+
+git clone https://github.com/ShellKhan/learning1146.git
+git pull
+git checkout testbranch
+
+git remote remove origin
+git remote add origin https://github.com/ShellKhan/tst.git
+git push -u origin testbranch
+
+
+
+1) коммитим изменения в памятке в каталоге 0923
+2) пробуем запушить их по старому ориджину
+	не получается
+3) меняем ориджин на новый:
+	- создаем новый репо на гитхабе
+	- у себя в репо подаем команды:
+		git remote remove origin
+		git remote add origin (новый адрес с гитхаба)
+		git push -u origin (имя ветки)
+	- переключаемся на ветку master, и ее тоже апстримим
+	- проверяем на гитхабе результат
+4) устанавливаем дефолтной на гитхабе ветку мастер

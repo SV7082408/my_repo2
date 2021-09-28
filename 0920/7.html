@@ -1,0 +1,39 @@
+<<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>Transform</title>
+
+<style>
+@keyframes hod {
+0% {
+transform: rotate(-90deg);
+}
+25% {
+transform: rotate(-180deg);
+}
+75% {
+transform: rotate(-270deg);
+}
+100% {
+transform: rotate(-360deg);
+}
+}
+div {
+display: block;
+background: url('whirlpool.png') center no-repeat;
+height: 50px;
+width: 50px;
+margin: 200 auto;
+}
+div:hover {
+animation: hod 10s linear infinite;
+}
+</style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

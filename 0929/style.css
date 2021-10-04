@@ -1,0 +1,152 @@
+﻿@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('fonts/Oswald-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	margin: 0;
+	font: normal 16px/22px 'OpenSans';
+	color: #999;
+	background: #fff;
+}
+header {
+	height: 860px;
+	background: url('images/header_bg.png') center top no-repeat, linear-gradient(to bottom, #404149 740px, transparent 740px);
+	padding-top: 30px;
+}
+footer {
+	height: 151px;
+	background: #f7654a;
+	padding-top: 30px;
+}
+main {
+	margin: 100px auto 150px;
+	width: 1110px;
+}
+.container {
+	margin: 0 auto;
+	width: 1110px;
+}
+h1 {
+	margin-bottom: 60px;
+	font: 500 normal 36px/53px 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: #404149;
+}
+.gallery {
+	display: flex;
+	gap: 30px;
+}
+.gal_unit {
+	width: 350px;
+	flex: none;
+}
+footer button {
+	float: right;
+	margin-top: 43px;
+}
+.logo a {
+	display: block;
+	width: 60px;
+	height: 50px;
+}
+.login {
+	float: right;
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+.header {
+	font: 500 normal 64px/94px 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-top: 112px;
+	margin-bottom: 18px;
+}
+.text {
+	font: 400 normal 18px/26px 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	margin-top: 0;
+	margin-bottom: 166px;
+}
+.years {
+	background: #F7F7F7;
+	display: flex;
+	height: 300px;
+	padding: 0px 115px;
+	flex-wrap: wrap;
+}
+.count {
+	width: 190px;
+	height: 86px;
+	font: 500 normal 72px/107px 'Oswald';
+	color: #F7654A;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0px 15px;
+	margin-top: 57px;
+	margin-bottom: 25px;
+}
+.let {
+	width: 190px;
+	height: 43px;
+	font: 500 normal 36px/53px 'Oswald';
+	color: #000;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0px 15px;
+	margin-bottom: 10px;
+	}
+.mart {
+	width: 190px;
+	height: 22px;
+	font: 500 normal 18px/27px 'Oswald';
+	color: #999;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 0px 15px 57px;
+}
+footer .container {
+	margin: 0 0;
+	width: 1110px;
+}
+footer .header {
+	font: 700 normal 48px/71px 'Oswald';
+	text-transform: uppercase;
+	color: #FFF;
+	margin-top: 0px;
+	margin-buttom: 25px;
+}
+footer .text {
+	font: 700 normal 24px/36px 'Oswald';
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+}

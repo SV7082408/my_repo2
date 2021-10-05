@@ -1,0 +1,135 @@
+@font-face {
+	font-family: 'Mulish';
+	src: url('Mulish-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	font: normal 16px/24px 'Mulish';
+	margin: 0;
+}
+.container {
+	margin: 50px auto;
+	background: pink;
+	position: relative;
+	padding: 10px;
+}
+p, h1, h4 {
+	background: white;
+	border-radius: 10px;
+	width: 280px;
+	padding: 10px;
+}
+@media screen and (min-width: 720px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 616px;
+		padding: 0;
+	}
+	p {
+		position: absolute;
+		margin: 0;
+	}
+	.first {
+		top: 50px;
+		left: 50px;
+	}
+	.second {
+		top: 50px;
+		right: 50px;
+	}
+	.third {
+		bottom: 50px;
+		left: calc(50% - 150px);
+	}
+}
+@keyframes hod1 {
+				0% {
+					transform: translate(0px, 0px);
+				}
+				16.6% {
+					transform: translate(350px, 0px);
+				}
+				33.3% {
+					transform: translate(350px, -400px);
+				}
+				50% {
+					transform: translate(0px, -400px);
+				}
+				66.6% {
+					transform: translate(-350px, -400px);
+				}
+				83.2% {
+					transform: translate(-350px, 0px);
+				}
+				100% { 
+					transform: translate(0px, 0px);
+				}
+			}
+@keyframes hod2 {
+				0% {
+					transform: translate(0px, 0px);
+				}
+				16.6% {
+					transform: translate(-350px, 0px);
+				}
+				33.3% {
+					transform: translate(-720px, 0px);
+				}
+				50% {
+					transform: translate(-720px, 450px);
+				}
+				66.6% {
+					transform: translate(-300px, 450px);
+				}
+				83.2% {
+					transform: translate(0px, 450px);
+				}
+				100% { 
+					transform: translate(0px, 0px);
+				}
+			}
+@keyframes hod3 {
+				0% {
+				transform: translate(0px, 0px);
+				}
+				16.6% {
+					transform: translate(0px, 408px);
+				}
+				33.3% {
+					transform: translate(318px, 408px);
+				}
+				50% {
+					transform: translate(800px, 408px);
+				}
+				66.6% {
+					transform: translate(800px, 0px);
+				}
+				83.2% {
+					transform: translate(556px, 0px);
+				}
+				100% { 
+					transform: translate(0px, 0px);
+				}
+			}			
+@media screen and (min-width: 1100px) {
+	.container {
+		/*display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;*/
+		width: 1200px;
+		height: 616px;
+		padding: 0;
+	}
+			.third {
+			animation: hod1 5s linear infinite;}
+			.second {
+			animation: hod2 5s linear infinite;}
+			.first {
+			animation: hod3 5s linear infinite;}
+            }
+}

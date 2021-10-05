@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Угадай число!</title>
+        
+        <script>
+function guessNumber(hidden, n) {	
+		kolpop = 1;
+		while (kolpop <= n)
+		{
+			let userAnswer = Number(prompt('Введите число:'));
+			if (hidden === userAnswer) {
+				return kolpop;
+			}
+			else if (isNaN(userAnswer)){
+				alert('Это не цифры :( Попробуйте снова.');
+            } 
+			else if (hidden > userAnswer) {
+				alert('Введенное число меньше загаданного :( Попробуйте снова.');
+			}
+			else {
+				alert('Введенное число больше загаданного :( Попробуйте снова.');		
+		}
+		kolpop++;
+		}
+		return null;
+}
+let n = 3;
+console.log(guessNumber(12, n));
+        </script>
+    </head>
+    
+    <body></body>
+</html>

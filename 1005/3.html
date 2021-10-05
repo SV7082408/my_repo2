@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>Часовой</title>
+
+<script>
+/*let a, b;
+a = '1111';
+console.log (login());
+function login(b) {
+	b = prompt('Введите пароль:');
+	if (( b === a )) {
+		alert('Пароль принят. Вход открыт!');
+	}
+	else (( b != a) {
+		for ( let i=1; i < 4; i ++) {
+		login();
+	}
+	else {
+		return 'Пароль не принят, вход запрещен';
+		}
+}
+}*/
+function login(b) {
+for ( let i=1; i < 4; i++) {
+	if ( b === prompt('Введите пароль: ')) {
+		return 'Пароль принят. Вход открыт!';
+	}
+	}
+	return 'Пароль не принят, вход запрещен';
+}
+console.log(login("123"));
+
+
+
+/*function summa(x, y) {
+let sum = x + y;
+return sum;
+}
+/*function multi(x, y) {
+ if (( typeof x != 'number') || (typeof y != 'number') || isNaN (x) || isNan (y)) {}
+return x*y;
+}*/
+
+/*function fact(n) {
+	if (( typeof n != 'number') || (Math.floor(n) == n) || (n>0)) {
+		let res = 1;
+		for (let i=1; i <= n; i++) {
+			res *= i;
+	}
+		return res;
+		}
+	else {
+		return 'Негодные аргумент! ${n}!\Нужно целое положительное число!';
+		}
+
+}
+let a = 2, b = 4;
+let c = 3, d = 5;
+let q = 'Мос', w = "ква";
+
+//console.log(summa(q, w));
+//console.log(multi(a, d));
+console.log (fact(10));
+*/
+</script>
+
+</head>
+
+<body></body>
+</html>

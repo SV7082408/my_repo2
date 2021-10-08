@@ -1,0 +1,59 @@
+	<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>Игра в загадки</title>
+
+<script>
+let riddles = [
+	{	
+		question: "Серый и зубастый, воет в день ненастный.", 
+		answers: ["ВОЛК", "ВОЛЧИЩЕ", "ВОЛЧОК"] 
+    },
+	{	
+		question: "Пришла из леса птичница в рыжей шубке, кур посчитать.",
+		answers: ["ЛИСА", "ЛИСКА", "ЛИСОНЬКА"]
+    },
+	{
+		question:"Короткий хвостик, длинные ушки, весело скачет он по опушке.",
+		answers: ["ЗАЯЦ", "ЗАЙКА", "ЗАЙЧОНОК"]
+	}
+ ]
+ 
+ if (confirm("Здравствуйте! Поиграем в загадки?")) {
+		let score = 0;
+		
+		function takeUserAnswer(question) {
+			return prompt(question).toUpperCase();
+		}
+		
+		function verifyAnswer(userAnswer, arrAnswers) {
+			for (let j = 0; j < arrAnswers.length; j++) {
+				if (userAnswer === arrAnswers[j]) {
+					return true;
+					}
+				} return false;
+		}
+				
+		function game() {
+			let answer = "";
+			for (let i = 0; i < riddles.length; i++) {
+				answer = takeUserAnswer(riddles[i].question);
+				if (verifyAnswer(answer, riddles[i].answers)) {
+				score++;
+				}
+			}
+			alert("Игра окончена, вы угадали " + score + " загадки. До свидания!");
+		}
+
+game();
+
+} else {
+  alert("До свидания!")
+  }
+</script>
+</head>
+
+<body></body>
+</html>

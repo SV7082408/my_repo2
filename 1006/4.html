@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>Objects</title>
+
+	<script>
+
+/*function Auto(arr) {
+		this.color = arr [0],
+		this.model = arr [1];
+		this.speed = arr [2];
+}*/
+
+let car1 = {
+	color: 'red',
+	model: 'Ferrary',
+	speed: 0,
+	start: function() {
+		alert("Поехали!");
+		this.speed = 300;
+		},
+	stop: function() {
+		alert("Встали!");
+		this.speed = 0;
+	}
+};
+let car2 = {
+	color: 'green',
+	model: 'Ford',
+	speed: 0,
+	start: function() {
+		alert("Поехали!");
+		this.speed = 200;
+		},
+	stop: function() {
+		alert("Встали!");
+		this.speed = 0;
+	}
+};
+let car3 = {
+	color: 'black',
+	model: 'Lada',
+	speed: 0,
+	start: function() {
+		alert("Поехали!");
+		this.speed = 100;
+		},
+	stop: function() {
+		alert("Встали!");
+		this.speed = 0;
+	}
+};
+function Car(color, model, speed) {
+		this.color = color,
+		this.model = model;
+		this.speed = 0;
+		this.speed = function() {
+			alert("Поехали!");
+			this.speed = speed;
+		};
+		this.stop = function() {
+			alert("Стоп!");
+			this.speed = 0;
+		};
+}
+
+let q = new Car('red', 'Ferrary', 300);
+let w = new Car('green', 'Ford', 200);
+let e = new Car('black', 'Lada', 100);
+console.log(Car);
+console.log(q);
+console.log(w);
+console.log(e);
+
+/*let auto = {
+	['Красный', 'Жигули', 0],
+	['Синий', 'Хёндэ', 0],
+	['Зелёный', 'Шевроле', 0]
+};
+/*let start = [];
+for (let a of auto) {
+		start.push(
+
+}*/
+
+/*
+console.log(start);
+console.log(stop);*/
+
+	</script>
+
+</head>
+
+<body></body>
+</html>

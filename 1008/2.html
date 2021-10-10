@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>Промисы</title>
+
+	<script>
+	let promise = new Promise(function(resolve, reject) {
+	setTimeout(function() {
+	let d = new Date()
+	if (d.getTime() % 2) resolve('odd'); else reject(new Error('even')); 
+	}, 2000);
+	
+});
+console.log(promise);
+	</script>
+
+</head>
+
+<body></body>
+</html>

@@ -101,7 +101,11 @@ footer li {
 	.container {
 	padding-right: 124px;
     padding-bottom: 0px;
+<<<<<<< HEAD
     margin-top: 39px;
+=======
+    margin-top: 40px;
+>>>>>>> master
 	}
 	footer {
 	height: auto;
@@ -109,8 +113,13 @@ footer li {
 }
   footer p {
 	width: 336px;
+<<<<<<< HEAD
 	margin-bottom: 56px;
 	margin-left: 93px;
+=======
+	margin-bottom: 55px;
+	margin-left: 94px;
+>>>>>>> master
 }
 footer .heading {
 	margin-bottom: 32px;
@@ -118,6 +127,7 @@ footer .heading {
 }
 footer button {
 	width: 133px;
+<<<<<<< HEAD
 	height: 31px;
 	margin-top: 124px;
 }
@@ -125,13 +135,26 @@ footer button {
 	display: block;
 	margin-left: 93px;
     margin-top: 17px;
+=======
+	height: 32px;
+	margin-top: 122px;
+}
+	footer ol {
+	display: block;
+	margin-left: 94px;
+    margin-top: 18px;
+>>>>>>> master
     margin-bottom: 55px;
 }
 	footer li{
 	 padding: 9px 0px 9px 40px;
  }
  footer .copy {
+<<<<<<< HEAD
 	margin-left: 93px;
+=======
+	margin-left: 94px;
+>>>>>>> master
     margin-bottom: 64px; 
  }
 }
@@ -149,12 +172,17 @@ p {
 footer .heading {
     font: 400 normal 24px/28px 'Roboto';
 	margin: 0px;
+<<<<<<< HEAD
     padding: 14px 0px 16px;
+=======
+    padding: 18px 0px 16px;
+>>>>>>> master
     }
 footer button {
     width: 108px;
 	height: 31px;
     order: 1;
+<<<<<<< HEAD
     margin: 18px 0px 40px 0px;
     }
 footer ol {
@@ -167,9 +195,31 @@ footer p {
 }
 footer .copy {
     padding: 6px;
+=======
+    margin: 24px 0px 40px 0px;
+    }
+hr {
+	margin: 0px;
+}
+footer ol {
+    font: 400 normal 16px/19px 'Roboto';
+	display: block;
+    margin: 31px 16px 0px 16px;
+}
+footer p {
+	width: auto;
+    margin: 16px 16px;
+}
+footer .copy {
+    padding-top: 14px;
+>>>>>>> master
     margin-left: 0px;
     margin-bottom: 32px;
  }
 footer li{
+<<<<<<< HEAD
 	padding: 0px 0px 20px 22px;
+=======
+	padding: 0px 0px 18px 23px;
+>>>>>>> master
 }

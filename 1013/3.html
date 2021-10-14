@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Events</title>
+        
+        <style>
+            div {
+                margin: 100px auto;
+                border: 1px solid transparent;
+            }
+            #red {
+                background: red;
+                width: 598px;
+                height: 598px;
+            }
+            #green {
+                background: green;
+                width: 398px;
+                height: 398px;
+            }
+            #blue {
+                background: blue;
+                width: 198px;
+                height: 198px;
+            }
+        </style>
+        
+        <script>
+            window.onload = function(){
+                document.addEventListener('click', function(event){
+                    console.log(event);
+                });
+                /*
+                document.getElementById('green').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('GREEN ALERT 1!!!');
+                },true);
+                document.getElementById('red').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('RED ALERT 1!!!');
+                },true);
+                document.getElementById('blue').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('BLUE ALERT 1!!!');
+                },true);
+                document.getElementById('green').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('GREEN ALERT 2!!!');
+                });
+                document.getElementById('red').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('RED ALERT 2!!!');
+                });
+                document.getElementById('blue').addEventListener('click', function(event){
+                    console.log(event.target);
+                    console.log('BLUE ALERT 2!!!');
+                });
+                */
+            };
+        </script>
+    </head>
+    
+    <body>
+        <div id="red">
+            <div id="green">
+                <div id="blue"></div>
+            </div>
+        </div>
+    </body>
+</html>

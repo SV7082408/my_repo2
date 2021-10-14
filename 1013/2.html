@@ -36,6 +36,9 @@
             tr:nth-of-type(8), tr:nth-of-type(9) {
                 color: white;
             }
+			.clicked {
+                background: blue !important;
+            }
         </style>
         
         <script>
@@ -83,25 +86,32 @@
 				for (let i = 0; i < 8;  i++) {
 						uses3[i].innerHTML = shapes[i];
 						uses4[i].innerHTML = shapes[i];
-						}		
-           };
-		   document.addEventListener('click', function(event){
+						}	
+
+                document.addEventListener('click', function(event){
                     if (event.target.tagName == 'TD') {
-                        // ранее кликнутые клетки должны перестать быть синими
-                        // кликнутая клетка должна стать синей
-                        // если кликнута синяя клетка, она должна перестать быть синей
-                        if (event.target.className != 'clicked') {
-                            document.querySelectorAll('.clicked').forEach(function(item){
-                                item.className = '';
-                            });
-                            event.target.className = 'clicked';
-                        } else {
-                            document.querySelectorAll('.clicked').forEach(function(item){
-                                item.className = '';
-                            });
-                        }
+					 // ранее кликнутые клетки должны перестать быть синими
+					 event.target.getElementByClassName('.cliked').forEach(function(item) {
+					 item.className = '';
+					 });
+					 // кликнутая клетка должна стать синей.
+					if (event.target.className != 'clicked') {
+						event.target.className = 'clicked';
+									
+					} else {
+						event.tar
+					}
+					
+ 
+                     // если кликнута синяя клетка, она должна перестать быть синей
+					 
+					 
+                        
                     }
-                });
+
+					});	
+           };
+		   
 		   
 		   
         </script>

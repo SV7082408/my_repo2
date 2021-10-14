@@ -1,0 +1,58 @@
+<!Doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<title>DomRect</title>
+        <style>
+			.pink {
+				position: absolute;
+				left: 200px;
+				top: 150px;
+                background: pink;
+                width: 500px;
+                height: 500px;
+            }
+        </style>
+        <script>
+		window.onload = function(){
+		
+		//console.log(q.getBoundingClientRect());
+		//q.getElementById('pink'){     
+		//console.log(q.getBoundingClientRect());
+	
+		/*	let q = document.getElementById('pink');
+			q.onclick = function() {
+				console.log(q.getBoundingClientRect());
+			};*/
+			/*document.getElementById('pink').onclick = function() {
+				console.log(document.getElementById('pink').getBoundingClientRect());
+			};*/
+			
+		/*	document.getElementById('pink').addEventListener('click', function(event) {
+				console.log(document.getElementById('pink').getBoundingClientRect());
+			});*/
+			
+		/*document.querySelector('#pink').addEventListener('click', function(event) {
+				console.log(document.querySelector('#pink').getBoundingClientRect());
+			});*/
+		/*document.querySelector('div').addEventListener('click', function(event) {
+				console.log(document.querySelector('div').getBoundingClientRect());
+			});*/
+		document.querySelector('.pink').addEventListener('click', function(event) {
+				console.log(document.querySelector('.pink').getBoundingClientRect());
+			});
+};
+</script>
+</head>
+
+<body>
+
+	<!--<div id = "pink">-->
+	<!--<div>-->
+	<div class = "pink">
+	</div>
+
+
+</body>
+</html>

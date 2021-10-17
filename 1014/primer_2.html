@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+
+<title>Events</title>
+
+	<style>
+#d1
+{
+    width:100px;
+    height:100px;
+    position:relative;
+    background-color:green;
+}
+
+</style>
+<body>
+    <div id="d1" style="left:0"></div>
+    <input value="<=" type="button" id="bt1"/>
+    <input value="=>" type="button" id="bt2"/>
+
+<script>
+
+		window.onload = function() {
+document.getElementById('bt1').onclick = function(){
+    var q = document.getElementById('d1');
+    
+    if (parseInt(q.style.left) > 0) {        
+        q.style.left = ((parseInt(q.style.left) - 1) + 'px');
+    };
+};
+ 
+document.getElementById('bt2').onclick = function(){
+    var q = document.getElementById('d1');
+ 
+    if (parseInt(q.style.left) < window.screen.availWidth) {
+        q.style.left = ((parseInt(q.style.left) + 1) + 'px');
+    };
+};
+};
+</script>
+</head> 
+
+</body>
+</html>

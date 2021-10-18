@@ -29,8 +29,8 @@ $(function(){
                     }
                     // определяем положение верхнего левого угла блока относительно его родителя и вычисляем новое положение
                     let newplace = {
-                        left: oldplace.left + step * delta.clientX,
-                        top: oldplace.top + step * delta.clientY,
+                        left: oldplace.left + step * delta.x,
+                        top: oldplace.top + step * delta.y,
                     }
                     // проверяем нет ли касания границ поля.
                     if (borders.left > newplace.left) {

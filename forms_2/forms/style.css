@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	/*font: normal 16px/24px Arial;*/
+	font-family: 'Comfortaa', cursive;
+}
+h1 {
+	text-align: center;
+}
+form {
+	width: 1000px;
+	margin: 0 auto;
+}
+fieldset {
+	margin: 2em;
+	padding: 1em;
+}
+input {
+	width: 100%;
+	box-sizing: border-box;
+}
+#calendar {
+	margin: 0 auto;
+	background: linear-gradient(to right, #A4D7ED, #DEC5E3);
+}
+.dp_wrapper {
+	margin: 1em 0 0;
+	border: 1px solid black;
+	padding: 1em;
+}
+.dp_header {
+	text-align: center;
+	height: 26px;
+}
+.dp_header > b {
+	line-height: 26px;
+}
+.prev, .bigprev, .next, .bignext {
+	display: block;
+	width: 4em;
+	cursor: pointer;
+	font-weight: bold;
+	color: #324376;
+}
+.prev:hover, .bigprev:hover, .next:hover, .bignext:hover {
+	color: #000;
+	border-color: #000;
+	border-radius: 5%;
+	box-shadow:
+	1px 1px 1px 2px #324376;
+}
+.prev, .bigprev {
+	float: left;
+	margin-left: 1em;
+}
+.next, .bignext {
+	float: right;
+	margin-right: 1em;
+}
+.dp_grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: auto;
+	margin-top: 1em;
+	gap: 0.2em 1em;
+}
+.dp_grid > span {
+	text-align: center;
+}
+.headday {
+	font-weight: bold;
+	padding: 0.5em;
+}
+.getter {
+	cursor: pointer;
+	background: #ddf8e8;
+	border: 2px solid #A6EDE2;
+	border-radius: 5%;
+	box-shadow:
+	2px 2px 2px #324376;
+	padding: 8px;
+}
+.getter:hover {
+	background: #A4D7ED;
+	box-shadow:
+	inset 0px 0px 0px 2px #324376;
+}
+.holiday {
+	color: 	#DC143C;
+	border-color: 	#DC143C;
+}
+.markedday {
+	color: #fff;
+	background: #324376;
+}
+.today {
+	color: #fff;
+	background: #DEC5E3;
+}
+.holiday.today {
+	background: #DC143C;
+}
+.cashday {
+	text-decoration: underline;
+}
+.timer_btn {
+	float: right;
+	font-size: 3em;
+	line-height: 2em;
+}
+.timer_field {
+	font-size: 3em;
+	line-height: 2em;
+}
+.timer_field > span {
+	font-size: .5em;
+}
+select {
+	float: left;
+	margin-right: 2em;
+}
+.selector {
+	border: 1px solid #000;
+	padding: .5em;
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+}
+.sel_btn {
+	cursor: pointer;
+	background: none;
+	border: none;
+	float: right;
+	transition: all .5s ease;
+}
+.sel_opts {
+	position: absolute;
+	background: white;
+	padding: .5em;
+	border: 1px solid #000;
+	top: calc(100% + 1px);
+	left: -1px;
+	width: calc(100% - 1em);
+	box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.5);
+}
+.sel_option {
+	cursor: pointer;
+}
+.sel_option:hover {
+	background: blue;
+	color: white;
+}
+.sel_option.heading {
+	cursor: default;
+}
+.sel_option.heading:hover {
+	background: white;
+	color: black;
+}
+.open .sel_btn {
+	transform: rotate(180deg);
+}
